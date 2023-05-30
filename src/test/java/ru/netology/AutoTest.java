@@ -47,6 +47,7 @@ public class AutoTest {
         $("[data-test-id='action-login']").click();
         $("[data-test-id='error-notification']").shouldHave(text("Пользователь заблокирован"));
     }
+
     @Test
     @DisplayName("Should get error message if login with wrong login")
     void shouldGetErrorIfWrongLogin() {
